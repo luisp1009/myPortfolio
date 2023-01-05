@@ -1,0 +1,716 @@
+ 
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+
+ }
+
+body{
+    height: 100vh;
+    cursor:none;
+    background-color:#101010;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d9b310;
+    
+}
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot, .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+
+
+.logo{
+    width: 80px;
+    padding-top: 20px;
+}
+
+.name{
+    font-size: 35px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    z-index: 999;
+    margin-top: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 60px;
+  margin: 0 20px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #d9b310;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.mainPage{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 100px;
+}
+
+h3{
+    color: #d9b310;
+    font-size: 47px;
+    margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+h4{
+    color: #d9b310;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+}
+
+.about{
+    width: 100vw;
+    padding: 100px 0px;
+    background-color: #1c1d25;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.about img{
+    height: auto;
+    width: 330px;
+}
+
+.about-text{
+    margin-left: 25px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.anchor1{
+    height: 170px;
+    background-color: #1c1d25;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.pageTitles{
+    color: #d9b310 !important;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: left;
+}
+.pageTitles1{
+    color: #d9b310 !important;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+    font-family: 'Karla', sans-serif;
+}
+
+.aboutMeContent{
+    width: 550px;
+}
+
+button{
+    background-color: #d9b310;
+    color: #191919;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 13px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid #d9b310;
+    color: white;
+    cursor: pointer;
+}
+
+.service{
+   
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    font-size: 75px;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: 700px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+}
+
+.codeUsed{
+    color: #d9b310 !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px !important;
+}
+
+.pra p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.card .button{
+    background-color: #d9b310;
+    color: #191919;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+    
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #d9b310;
+    color: white;
+    cursor: pointer;
+}
+
+
+.section{
+   
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-end;
+    margin-right: 200px;
+    margin-top: 350px;
+    animation: animateBg 10s linear infinite;
+
+}
+
+img{
+    width:270px;
+    margin-bottom: 25px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    resize: vertical;
+    color: white;
+    background-color: #191919;
+  }
+  
+  input[type=submit] {
+    background-color: #d9b310;
+    color: #191919;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: transparent;
+    border: 2px solid #d9b310;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #1c1d25;
+    padding: 40px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactContainer{
+    background-color:#1c1d25; ;
+  }
+  label{
+    color: white;
+  }
+
+.sendBtn{
+    width: 100px;
+    height: 45px;
+    font-size:17px;
+}
+
+.push{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+a{
+    font-family: 'Karla', sans-serif;
+    color: #191919;
+    font-weight: bold;
+}
+
+i{
+    margin-top: -5px;
+    font-size: 30px;
+    color: white;
+    
+  }
+
+  li p{
+    color: white;
+    margin-top:20px;
+  }
+  
+  .resumePage a{
+    width: 200px !important;
+    color: #d9b310 !important;
+  }
+
+h2{
+    color: white;
+    font-weight: normal;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+  .resume{
+    width: 70vw;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+
+label, input{
+    font-family: 'Karla', sans-serif;
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    body{
+
+        overflow-x: hidden;
+
+    }
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 20px;
+      }
+
+      .leftNav{
+        display: none;
+      }
+      .rightNav{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        background-color: #333;
+        width: 100vw;
+    }
+
+      h1{
+        color: white;
+        font-size: 55px;
+    }
+    h3{
+        color: #d9b310;
+        font-size: 26px;
+        margin-bottom: 20px;
+        font-family: 'Karla', sans-serif;
+    }
+    .homeSkills{
+        color: white;
+        font-weight: normal;
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+        width: 300px;
+    }
+    
+   .anchor1{
+    display: none;
+    visibility:hidden;
+    
+   }
+
+    .about img{
+        height: auto;
+        width: 200px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+ 
+    .aboutMeContent{
+        font-size: 15px !important;
+        line-height: 27px !important;
+        width: 300px; 
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .pageTitles{
+        font-size: 50px !important;
+        width: 250px !important;
+        margin-left: 0 !important;
+    
+     }
+    
+     .pageTitles1{
+        font-size: 50px !important;
+        margin-left: -35px;  
+        color: #d9b310 !important;
+        font-family: 'Lato', sans-serif; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #1c1d25;
+        padding: 40px;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 20px;
+      }
+
+      .leftNav{
+        display: none;
+      }
+      .rightNav{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        background-color: #333;
+        width: 100vw;
+    }
+
+      h1{
+        color: white;
+        font-size: 55px;
+    }
+    h3{
+        color: #d9b310;
+        font-size: 26px;
+        margin-bottom: 20px;
+        font-family: 'Karla', sans-serif;
+    }
+    .homeSkills{
+        color: white;
+        font-weight: normal;
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+        width: 300px;
+    }
+    
+  
+
+    .about img{
+        height: auto;
+        width: 200px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+ 
+    .aboutMeContent{
+        font-size: 15px !important;
+        line-height: 27px !important;
+        width: 300px; 
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .pageTitles{
+        font-size: 50px !important;
+        width: 350px;
+        margin-left: -65px;   
+    }
+    .pageTitles1{
+        font-size: 50px !important;
+        width: 350px;
+        margin-left: -35px;  
+        color: #d9b310 !important;
+        font-family: 'Lato', sans-serif; 
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 60px;
+            background-color: #333;
+            color: #fff;
+            z-index: 999;
+            margin-top: 20px;
+        }
+       
+    
+          h1{
+            color: white;
+            font-size: 75px;
+        }
+        
+        h3{
+            color: #d9b310;
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-family: 'Karla', sans-serif;
+        }
+        .homeSkills{
+            color: white;
+            font-weight: normal;
+            font-family: 'Karla', sans-serif;
+            font-size: 20px;
+            width: 350px;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 60px;
+            margin: 0 15px;
+          }
+    
+        .about img{
+            height: auto;
+            width: 250px;
+            margin-top: -100px;
+        }
+    
+        .main{
+            display: flex;
+            flex-direction: column;
+            
+        }
+     
+        .aboutMeContent{
+            font-size: 20px !important;
+            line-height: 30px !important;
+            width: 500px; 
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .pageTitles{
+            font-size: 50px !important;
+            width: 350px;
+            margin-left: 0;   
+        }
+        .pageTitles1{
+            font-size: 50px !important;
+            width: 200px;
+            margin-left: 120px;  
+            color: #d9b310 !important;
+            font-family: 'Lato', sans-serif; 
+        }
+    
+        .box{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card{
+            width: 600px;
+            height: 500px;
+        }
+
+        .appImages{
+            display: flex;   
+            justify-content: center;
+            margin-bottom: 15px; 
+            margin-top: 15px;
+        }
+
+        img{
+            margin-left: 7px;
+            margin-right: 7px;
+        }
+    
+        h5{
+            margin-top: 15px;
+            font-size: 30px;
+        }
+        .codeUsed{
+            font-size: 30px !important;
+        }
+
+        p{
+            font-size: 20px !important;
+        }
+        
+        label{
+            font-size: 20px;
+        }
+       
+
+    
+  }

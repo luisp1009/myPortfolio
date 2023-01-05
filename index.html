@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap'); </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+  </style>
+  
+  
+  <title>Portfolio</title>
+</head>
+<div>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+  <div div class="center">
+  <div class="hero" id="home">
+    
+
+    <nav class="navbar">
+
+      <div class="leftNav">
+        <a href="#home" class="active">HOME</a>
+        <a href="#anchor1">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="rightNav">
+        <a href="https://github.com/luisp1009"target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/luisparedes1009/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.behance.net/paredesLuis"target="_blank"><i class="fa-brands fa-behance"></i></a>
+        <span><a class="resume" target="_blank" href="https://drive.google.com/file/d/1J-pa6x97EVl_XmsyW6kj0RaKhqZSkY26/view?usp=sharing">RESUME</a></span>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('li').on('click', function(){
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+          })
+        })
+      </script>
+     
+    </nav>
+</div>
+
+    <div class="content">
+      <div>
+      <h1 >Luis Paredes</h1>
+      <h3>Web Developer & Designer</h3>
+      <h2 class="homeSkills">Javascript (ES6) - MongoDB - Express - React - NodeJS<br>HTML & CSS - Bootstrap - Adobe Creative Cloud - 3D Modeling<br>
+      and much more</h2>
+    </div>
+    
+    </div>
+  </div>
+   
+  
+<div class="anchor1" id="anchor1"></div>
+<section class="about" id="about">
+  <div class="main">
+   <div> <img src="./images/Profile.png"></div>
+    <div class="about-text">
+      <h2 class="pageTitles">This is me</h2>
+     
+      <p class="aboutMeContent">I have always had a passion for technology and design, and I discovered a love for building apps and websites. 
+        A little about me: I am ambitious and hardworking, an excellent team player and always finding ways to grow. I am a highly motivated individual with an excellent work ethic, looking to combine my new coding skills with my previous design and digital marketing experience. I am always looking for ways to improve my skills and knowledge, and I am excited to continue learning and growing.</p>
+      
+    
+      
+    </div>
+  </div>
+</section>
+
+<div class="service" id="projects">
+  <div class="title">
+    <h2 class="pageTitles1">Projects</h2>
+  
+  <div class="box">
+  <div class="card">
+  
+    <h5>Alien Invasion - Video Game</h5>
+    <div class="pra">
+      <p class="codeUsed">Javascript only </p>
+      <p>In Alien Invasion, you will defend earth against a relentless aliens.
+        Are you ready to face the challenge and become the hero the earth needs? Play Alien Invasion now and find out!
+      </p><span class="appImages">
+      <img src="./images/project1-1.jpg" alt="">
+      <img src="./images/project1-2.jpg" alt=""></span>
+      <a href="https://luisp1009.github.io/Video-Game-Project/" target="_blank"class="button">Live Demo</a>
+    </div>
+  </div>
+  
+
+  <div class="card">
+  
+    <h5>How Safe Your Car Is? </h5>
+    <div class="pra">
+      <p class="codeUsed">Application - Express, API, NodeJs</p><p>
+        Are you in the market for a car but don't know where to start?. Welcome to the ultimate app for finding the safest and most reliable vehicles on the market! This app got you covered. 
+      </p><span class="appImages">
+      <img src="./images/project2-1.jpg" alt="">
+      <img src="./images/project2-2.jpg" alt=""></span>
+      <a href="https://luisp-project2.fly.dev/" target="_blank" class="button">Live Demo</a>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <h5>Rent My Yard App</h5>
+    <div class="pra">
+      <p class="codeUsed">MERN stack</p>
+      <p>Welcome to Rent My Yard, the ultimate app for finding and renting out underutilized outdoor space!
+      Rent My Yard is here to help you turn that unused space into a source of income.</p>
+      <span class="appImages"><img src="./images/project3-1.jpg" alt="">
+      <img src="./images/project3-2.jpg" alt=""></span>
+      <a href="https://loquacious-chebakia-d20f92.netlify.app/" target="_blank" class="button">Live Demo</a>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="contactContainer" id="contact">
+<div class="container">
+  <form target="_blank" action="https://formspree.io/f/xjvdvkqe" method="POST">
+    <label>Full Name
+    <input type="text" id="fname" name="firstname" required>
+    </label>
+    <label>Email
+    <input type="text" id="email" name="email" required>
+  </label>
+    <label>Your Message
+    <textarea type="text" id="subject" name="content" style="height:200px" required/>
+</textarea>
+</label>
+    
+    <input class="sendBtn" type="submit" value="Send">
+  </form>
+</div>
+</div>
+</div>
+
+
+<script src="./javascript.js"></script>
+</body>
+</html>
